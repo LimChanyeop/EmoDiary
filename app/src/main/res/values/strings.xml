@@ -1,0 +1,156 @@
+<resources>
+    <string name="app_name">EmoDiary</string>
+
+    <string name="spinner_prompt">Select your Emotion</string>
+
+    <string-array name="emotion_list">
+        <item>기쁨</item>
+        <item>벅참</item>
+        <item>흐뭇함</item>
+        <item>즐거움</item>
+        <item>후련함</item>
+        <item>산뜻함</item>
+        <item>행복함</item>
+        <item>따뜻함</item>
+        <item>충만함</item>
+        <item>뿌듯함</item>
+        <item>황홀함</item>
+        <item>만족스러움</item>
+        <item>사랑</item>
+        <item>친밀함</item>
+        <item>정겨움</item>
+        <item>사랑스러움</item>
+        <item>반가움</item>
+        <item>고마움</item>
+        <item>평화로움</item>
+        <item>포근함</item>
+        <item>평온함</item>
+        <item>여유로움</item>
+        <item>긴장풀림</item>
+        <item>느긋함</item>
+        <item>기운이 남</item>
+        <item>용기가 남</item>
+        <item>생기있음</item>
+        <item>활기참</item>
+        <item>흥분됨</item>
+        <item>자신감있는</item>
+        <item>두려움</item>
+        <item>불안함</item>
+        <item>무서움</item>
+        <item>암담함</item>
+        <item>섬뜩함</item>
+        <item>겁남</item>
+        <item>걱정됨</item>
+        <item>뒤숭숭함</item>
+        <item>막막함</item>
+        <item>염려됨</item>
+        <item>초조함</item>
+        <item>불편함</item>
+        <item>슬픔</item>
+        <item>서러움</item>
+        <item>비참함</item>
+        <item>울적함</item>
+        <item>속상함</item>
+        <item>먹먹함</item>
+        <item>외로움</item>
+        <item>쓸쓸함</item>
+        <item>허전함</item>
+        <item>고독함</item>
+        <item>서글픔</item>
+        <item>거슬림</item>
+        <item>답답함</item>
+        <item>신경쓰임</item>
+        <item>거북함</item>
+        <item>찜찜함</item>
+        <item>짜증남</item>
+    </string-array>
+    <string-array name="delightful">
+        <item>벅참</item>
+        <item>흐뭇함</item>
+        <item>즐거움</item>
+        <item>후련함</item>
+        <item>산뜻함</item>
+    </string-array>
+    <string-array name="happy">
+        <item>따뜻함</item>
+        <item>충만함</item>
+        <item>뿌듯함</item>
+        <item>황홀함</item>
+        <item>만족스러움</item>
+    </string-array>
+    <string-array name="lovely">
+        <item>친밀함</item>
+        <item>정겨움</item>
+        <item>사랑스러움</item>
+        <item>반가움</item>
+        <item>고마움</item>
+    </string-array>
+    <string-array name="peaceful">
+        <item>포근함</item>
+        <item>평온함</item>
+        <item>여유로움</item>
+        <item>긴장풀림</item>
+        <item>느긋함</item>
+    </string-array>
+    <string-array name="energetic">
+        <item>용기가 남</item>
+        <item>생기있음</item>
+        <item>활기참</item>
+        <item>흥분됨</item>
+        <item>자신감있는</item>
+    </string-array>
+    <string-array name="fear">
+        <item>불안함</item>
+        <item>무서움</item>
+        <item>암담함</item>
+        <item>섬뜩함</item>
+        <item>겁남</item>
+    </string-array>
+    <string-array name="worried">
+        <item>뒤숭숭함</item>
+        <item>막막함</item>
+        <item>염려됨</item>
+        <item>초조함</item>
+        <item>불편함</item>
+    </string-array>
+    <string-array name="sad">
+        <item>서러움</item>
+        <item>비참함</item>
+        <item>울적함</item>
+        <item>속상함</item>
+        <item>먹먹함</item>
+    </string-array>
+    <string-array name="lonely">
+        <item>쓸쓸함</item>
+        <item>허전함</item>
+        <item>고독함</item>
+        <item>서글픔</item>
+    </string-array>
+    <string-array name="unpleasant">
+        <item>답답함</item>
+        <item>신경쓰임</item>
+        <item>거북함</item>
+        <item>찜찜함</item>
+        <item>짜증남</item>
+    </string-array>
+    <string-array name="positive">
+        <item>기쁨</item>
+        <item>행복</item>
+        <item>사랑</item>
+        <item>평화</item>
+        <item>기운</item>
+    </string-array>
+    <string-array name="negative">
+        <item>두려움</item>
+        <item>걱정</item>
+        <item>슬픔</item>
+        <item>고독</item>
+        <item>거슬림</item>
+    </string-array>
+    <string name="emo_direction">감정의 방향</string>
+    <string name="hint_describe">당신의 감정을 설명하세요</string>
+    <string name="complete">입력완료</string>
+    <string name="select">선택</string>
+    <string name="instruction">기분의 방향을 고르세요</string>
+
+</resources>
