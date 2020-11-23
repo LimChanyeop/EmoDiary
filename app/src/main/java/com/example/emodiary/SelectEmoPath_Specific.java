@@ -26,25 +26,23 @@ public class SelectEmoPath_Specific extends AppCompatActivity{
 
             if(specific.equals("기쁨"))
                 specific_array = getResources().getStringArray(R.array.delightful);
-            if(specific.equals("행복"))
+            else if(specific.equals("행복"))
                 specific_array = getResources().getStringArray(R.array.happy);
-            if(specific.equals("시랑"))
+            else if(specific.equals("시랑"))
                 specific_array = getResources().getStringArray(R.array.lovely);
-            if(specific.equals("평화"))
+            else if(specific.equals("평화"))
                 specific_array = getResources().getStringArray(R.array.peaceful);
-            if(specific.equals("기운"))
+            else if(specific.equals("기운"))
                 specific_array = getResources().getStringArray(R.array.energetic);
-            if(specific.equals("두려움"))
+            else if(specific.equals("두려움"))
                 specific_array = getResources().getStringArray(R.array.fear);
-            if(specific.equals("걱정"))
+            else if(specific.equals("걱정"))
                 specific_array = getResources().getStringArray(R.array.worried);
-            if(specific.equals("슬픔"))
+            else if(specific.equals("슬픔"))
                 specific_array = getResources().getStringArray(R.array.sad);
-            if(specific.equals("고독"))
+            else if(specific.equals("고독"))
                 specific_array = getResources().getStringArray(R.array.lonely);
-            if(specific.equals("거슬림"))
-                specific_array = getResources().getStringArray(R.array.unpleasant);
-            else
+            else if(specific.equals("거슬림"))
                 specific_array = getResources().getStringArray(R.array.unpleasant);
 
             bt_content1.setText(specific_array[0]);

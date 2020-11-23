@@ -125,6 +125,7 @@
         <item>허전함</item>
         <item>고독함</item>
         <item>서글픔</item>
+        <item>공허함</item>
     </string-array>
     <string-array name="unpleasant">
         <item>답답함</item>
