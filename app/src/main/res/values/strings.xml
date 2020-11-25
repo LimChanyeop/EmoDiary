@@ -148,10 +148,14 @@
         <item>고독</item>
         <item>거슬림</item>
     </string-array>
+    <string name="direct_select">지금 나의 감정을 정확히 고를 수 있어요</string>
+    <string name="find_emotion">지금 내 감정 알아가기</string>
     <string name="emo_direction">감정의 방향</string>
-    <string name="hint_describe">당신의 감정을 설명하세요</string>
+    <string name="hint_describe">감정을 설명하는 한 줄</string>
     <string name="complete">입력완료</string>
     <string name="select">선택</string>
-    <string name="instruction">기분의 방향을 고르세요</string>
-
+    <string name="instruction">느껴지는 감정의 방향을 고르세요</string>
+    <string name="gorecord">기록 보러가기</string>
+    <string name="gomain">처음으로</string>
+    <string name="delete">지우기</string>
 </resources>

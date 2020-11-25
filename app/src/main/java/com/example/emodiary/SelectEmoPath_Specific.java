@@ -11,7 +11,7 @@ public class SelectEmoPath_Specific extends AppCompatActivity{
       protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
             setContentView(R.layout.pathspecific);
-
+            /* 뷰 할당 과정*/
             String specific;
             Button bt_content1 = findViewById(R.id.content01);
             Button bt_content2 = findViewById(R.id.content02);
@@ -28,7 +28,7 @@ public class SelectEmoPath_Specific extends AppCompatActivity{
                 specific_array = getResources().getStringArray(R.array.delightful);
             else if(specific.equals("행복"))
                 specific_array = getResources().getStringArray(R.array.happy);
-            else if(specific.equals("시랑"))
+            else if(specific.equals("사랑"))
                 specific_array = getResources().getStringArray(R.array.lovely);
             else if(specific.equals("평화"))
                 specific_array = getResources().getStringArray(R.array.peaceful);

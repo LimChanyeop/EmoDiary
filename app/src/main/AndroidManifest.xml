@@ -32,6 +32,10 @@
             android:name=".SelectEmoPath_Specific"
             android:label="SelectEmoPath_Specific">
         </activity>
+        <activity
+            android:name=".EmotionContent"
+            android:label="EmotionContent">
+        </activity>
     </application>
 
 </manifest>

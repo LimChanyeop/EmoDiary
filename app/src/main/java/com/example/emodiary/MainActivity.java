@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         Button bt_mid_select = (Button) findViewById(R.id.select_mid);
         ImageButton ib_negative = (ImageButton)findViewById(R.id.ib_negative);
         ImageButton ib_positive = (ImageButton)findViewById(R.id.ib_positive);
+        Button bt_go_record = findViewById(R.id.bt_gorecord);
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.emotion_list,R.layout.support_simple_spinner_dropdown_item);
         adapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
@@ -71,6 +72,13 @@ public class MainActivity extends AppCompatActivity {
                 else
                     intent.putExtra("TYPE", "neg");
                 startActivity(intent);
+            }
+        });
+        bt_go_record.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_recorded = new Intent(MainActivity.this, RecordList.class);
+                startActivity(intent_recorded);
             }
         });
     }
