@@ -20,6 +20,7 @@
         android:layout_height="match_parent"
         android:layout_below="@+id/recordtitle"
         android:layout_marginTop="0dp"
+        android:background="@color/gray_4"
         android:scrollbars="vertical" />
 
 </RelativeLayout>

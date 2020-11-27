@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Spinner emotionlist = (Spinner)findViewById(R.id.list);
+        Spinner emotionlist = (Spinner)findViewById(R.id.list); // 스피너 리스트
         Button bt_select = (Button) findViewById(R.id.select);
         TextView tv_selected = (TextView)findViewById(R.id.tv_selected); // 최종 선택 감정
         TextView tv_mid_selected = (TextView)findViewById(R.id.tv_mid_selected); // 선택 감정 분류
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.emotion_list,R.layout.support_simple_spinner_dropdown_item);
         adapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
-        emotionlist.setAdapter(adapter);
+        emotionlist.setAdapter(adapter); // 어댑터 할당
         emotionlist.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        ib_positive.setOnClickListener(new View.OnClickListener(){
+        ib_positive.setOnClickListener(new View.OnClickListener(){ // 버튼 클릭 -> 텍스트뷰 변경
             @Override
             public void onClick(View v) {
                 tv_mid_selected.setText("긍정적 감정");
@@ -74,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        bt_go_record.setOnClickListener(new View.OnClickListener() {
+        bt_go_record.setOnClickListener(new View.OnClickListener() { // 기록 보기 버튼 리스너 할당
             @Override
             public void onClick(View v) {
                 Intent intent_recorded = new Intent(MainActivity.this, RecordList.class);
