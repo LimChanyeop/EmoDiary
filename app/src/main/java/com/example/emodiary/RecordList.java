@@ -24,10 +24,9 @@ public class    RecordList extends AppCompatActivity { //감정 객체 리스트
         super.onCreate(RecordInstance);
         setContentView(R.layout.record_list);
 
-        ArrayList<MyData> list = new ArrayList<>();
+        ArrayList<MyData> list = new ArrayList<>(); // Mydata타입 받을 변수 설정
         helper = new DiaryHelper(this);
-        db = helper.getReadableDatabase();
-        TextView tv = (TextView)findViewById(R.id.recordtitle);
+        db = helper.getReadableDatabase(); // select 수행 가능한 Readable DB
 
         Cursor cursor;
         cursor = db.rawQuery("SELECT emotion, date, time, description FROM diarydata" ,null);
@@ -37,10 +36,9 @@ public class    RecordList extends AppCompatActivity { //감정 객체 리스트
         RecyclerView recyclerView = findViewById(R.id.record_recyclerview);
         recyclerView.setLayoutManager(new LinearLayoutManager(this)) ;
 
-                  // 리사이클러뷰에 SimpleTextAdapter 객체 지정.
+        // 리사이클러뷰에 SimpleTextAdapter 객체 지정.
         RecyclerViewAdapter adapter = new RecyclerViewAdapter(list) ;
         recyclerView.setAdapter(adapter) ;
     }
-
 }
 

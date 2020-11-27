@@ -10,7 +10,12 @@
         android:id="@+id/recordtitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="기록확인">
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="287dp"
+        android:layout_marginRight="287dp"
+        android:text="@string/list"
+        android:textSize="18sp">
 
     </TextView>
 

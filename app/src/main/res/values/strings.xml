@@ -158,4 +158,6 @@
     <string name="gorecord">기록 보러가기</string>
     <string name="gomain">처음으로</string>
     <string name="delete">지우기</string>
+    <string name="list">나의 감정 리스트</string>
+    <string name="do_emoselect">감정을 선택하세요</string>
 </resources>

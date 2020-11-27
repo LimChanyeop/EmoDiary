@@ -51,7 +51,7 @@ public class DescribeEmotion extends AppCompatActivity {
         SimpleDateFormat time_info = new SimpleDateFormat("HH:mm:ss");
         extra_info[0] = time_info.format(date); // 시간 정보 삽입
         tv_time_info.setText(extra_info[0]);
-        SimpleDateFormat date_info = new SimpleDateFormat("yyyy년 MM월 dd일 EE요일");
+        SimpleDateFormat date_info = new SimpleDateFormat("yyyy년 MM월 dd일 E요일", Locale.KOREAN); //한글로 요일 표시
         extra_info[1] = date_info.format(date); // 날짜 정보 삽입
         tv_date_info.setText(extra_info[1]);
 

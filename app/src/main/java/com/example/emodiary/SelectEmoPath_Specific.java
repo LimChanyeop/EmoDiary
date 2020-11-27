@@ -10,7 +10,7 @@ import androidx.appcompat.app.AppCompatActivity;
 public class SelectEmoPath_Specific extends AppCompatActivity{
       protected void onCreate(Bundle savedInstanceState) {
             super.onCreate(savedInstanceState);
-            setContentView(R.layout.pathspecific);
+            setContentView(R.layout.path_specific);
             /* 뷰 할당 과정*/
             String specific;
             Button bt_content1 = findViewById(R.id.content01);
@@ -23,7 +23,7 @@ public class SelectEmoPath_Specific extends AppCompatActivity{
             specific = intent_type.getExtras().getString("SPECIFIC");
             String [] specific_array;
             specific_array = null; // 배열 초기화
-
+            /* 구체적 감정 선택 */
             if(specific.equals("기쁨"))
                 specific_array = getResources().getStringArray(R.array.delightful);
             else if(specific.equals("행복"))
@@ -44,7 +44,7 @@ public class SelectEmoPath_Specific extends AppCompatActivity{
                 specific_array = getResources().getStringArray(R.array.lonely);
             else if(specific.equals("거슬림"))
                 specific_array = getResources().getStringArray(R.array.unpleasant);
-
+            /* 특정 감정 대분류에 속한 소분류 감정 */
             bt_content1.setText(specific_array[0]);
             bt_content2.setText(specific_array[1]);
             bt_content3.setText(specific_array[2]);
@@ -52,7 +52,7 @@ public class SelectEmoPath_Specific extends AppCompatActivity{
             bt_content5.setText(specific_array[4]);
 
             View.OnClickListener listener = new View.OnClickListener(){
-                public void onClick(View v){
+                public void onClick(View v){ // 버튼 클릭 -> 버튼 내용을 감정 설명 액티비티로 전달
                     Button bt = (Button) v;
                     Intent intent_specific = new Intent(com.example.emodiary.SelectEmoPath_Specific.this, DescribeEmotion.class);
                     intent_specific.putExtra("SELECTED", bt.getText().toString());

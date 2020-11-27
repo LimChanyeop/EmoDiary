@@ -20,7 +20,7 @@ import static androidx.core.content.ContextCompat.startActivity;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.ViewHolder> {
 
-    private ArrayList<MyData> mData = null;
+    private ArrayList<MyData> mData;
 
     public class ViewHolder extends RecyclerView.ViewHolder{
         /* 뷰 선언 */
@@ -30,10 +30,10 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         CardView cardView;
         //int position;
         String time;
-        ViewHolder(View itemView) { //뷰 홀더 객체에 들어갈 뷰들 == 카드뷰의 구성 요소들
+        ViewHolder(View itemView) { //뷰 홀더 객체에 들어갈 뷰들 == 리사리클러 뷰의 구성 요소들
             super(itemView);
-            cardView = itemView.findViewById(R.id.card);
-            record_emotion = itemView.findViewById(R.id.tv_record_emotion);
+            cardView = itemView.findViewById(R.id.card); //카드 뷰
+            record_emotion = itemView.findViewById(R.id.tv_record_emotion); //카드뷰 구성요소
             record_center = itemView.findViewById(R.id.tv_record_center);
             record_date = itemView.findViewById(R.id.tv_record_date);
         }
@@ -66,7 +66,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         holder.cardView.setOnClickListener(new OnClickListener() { // 카드뷰 클릭 -> EmotionContent 로 이동
 
             @Override
-            public void onClick(View v) {
+            public void onClick(View v) { // 카드뷰 클릭 -> 인텐트에 정보 EmotionContent에 실어서 전달
                 Intent intent = new Intent(v.getContext(), EmotionContent.class); //인텐트에 카드뷰에 있는 정보 담아서 전달
                 intent.putExtra("POS",position);
                 intent.putExtra("EMO",holder.record_emotion.getText());
@@ -78,20 +78,17 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
         });
 
     }
-
-
-
     @Override
     public int getItemCount() {
         return mData.size();
     }
 }
-class MyData{
+class MyData{ // 카드뷰에 옮길 수 있도록 정형화된 클래스 선언
     public String emotion;
     public String date;
     public String time;
     public String center;
-    public MyData(String emotion, String date, String time, String description){
+    public MyData(String emotion, String date, String time, String description){ // 생성자 -> 할당
         this.emotion = emotion;
         this.date = date;
         this.time = time;

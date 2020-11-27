@@ -27,9 +27,9 @@ public class MainActivity extends AppCompatActivity {
         Button bt_mid_select = (Button) findViewById(R.id.select_mid);
         ImageButton ib_negative = (ImageButton)findViewById(R.id.ib_negative);
         ImageButton ib_positive = (ImageButton)findViewById(R.id.ib_positive);
-        Button bt_go_record = findViewById(R.id.bt_gorecord);
+        Button bt_go_record = findViewById(R.id.bt_gorecord); // 기록보기 버튼
 
-        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.emotion_list,R.layout.support_simple_spinner_dropdown_item);
+        ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,R.array.emotion_list,R.layout.support_simple_spinner_dropdown_item); //string 파일에서 list 받아옴
         adapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item);
         emotionlist.setAdapter(adapter); // 어댑터 할당
         emotionlist.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
